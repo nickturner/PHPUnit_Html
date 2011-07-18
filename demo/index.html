@@ -1,0 +1,413 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Unit Test Report: ..\tests</title>
+    <link rel="stylesheet" href="../src/templates/default/css/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div id="container">
+  <div class="box rounded suite suite-1 even passed closed">
+    <div class="icon"></div>
+    <div class="name">DeprecatedTest</div>
+    <div class="desc"><span class="stats"><span class="total">Total: <b>1</b>,</span><span class="passed">Passed: <b>1</b>,</span><span class="failed">Failed: <b>0</b>,</span><span class="skipped">Skipped: <b>0</b>,</span><span class="incomplete">Incomplete: <b>0</b></span></span><span class="assertions">Assertions: <b>1</b>,</span><span class="problems">Problems: <b>1</b>,</span><span class="time">Executed in 0.002900 seconds.</span></div>
+    <div class="expand-button"></div>
+    <div class="more tests">
+      <hr class="big"><div class="test test-0 even last passed closed">
+  <div class="icon"></div>
+  <div class="name">testDeprecated</div>
+  <div class="desc"><span class="assertions">Assertions: <b>1</b>,</span><span class="problems">Problems: <b>1</b>,</span><span class="time">Executed in 0.002900 seconds.</span></div>
+  
+  <div class="expand-button"></div>
+  <div class="more">
+    <div class="result"><pre></pre></div>
+        <div class="deprecated message rounded show">
+  <div class="icon"></div>
+  <div class="text">\home\www\libs\PHPUnit_Html\tests\DeprecatedTest.php:(between 4 and 6) - assertType() will be removed in PHPUnit 3.6 and should no longer be used. assertInternalType() should be used for asserting internal types such as &quot;integer&quot; or &quot;string&quot; whereas assertInstanceOf() should be used for asserting that an object is an instance of a specified class or interface.</div>
+</div>
+
+        <div class="source closed">
+      <div class="toggle-button"></div>
+      <div class="listing rounded show"><h1>\home\www\libs\PHPUnit_Html\tests\DeprecatedTest.php</h1><table class="code" cellpadding="0" cellspacing="0" border="0"><tr class="line even"><td class="linenum">4</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testDeprecated</span><span style="color: #007700">()&nbsp;{</span></td></tr><tr class="line odd"><td class="linenum">5</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assertType</span><span style="color: #007700">(</span><span style="color: #DD0000">'int'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">3</span><span style="color: #007700">);</span></td></tr><tr class="line even"><td class="linenum">6</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></td></tr></table></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="box rounded suite suite-2 even passed closed">
+    <div class="icon"></div>
+    <div class="name">ExceptionTest</div>
+    <div class="desc"><span class="stats"><span class="total">Total: <b>2</b>,</span><span class="passed">Passed: <b>2</b>,</span><span class="failed">Failed: <b>0</b>,</span><span class="skipped">Skipped: <b>0</b>,</span><span class="incomplete">Incomplete: <b>0</b></span></span><span class="assertions">Assertions: <b>0</b>,</span><span class="problems">Problems: <b>2</b>,</span><span class="time">Executed in 0.001029 seconds.</span></div>
+    <div class="expand-button"></div>
+    <div class="more tests">
+      <hr class="big"><div class="test test-0 even passed closed">
+  <div class="icon"></div>
+  <div class="name">testException</div>
+  <div class="desc"><span class="assertions">Assertions: <b>0</b>,</span><span class="problems">Problems: <b>1</b>,</span><span class="time">Executed in 0.000474 seconds.</span></div>
+  
+  <div class="expand-button"></div>
+  <div class="more">
+    <div class="result"><pre></pre></div>
+    <div class="error message rounded show closed">
+  <div class="icon"></div>
+  <div class="text">This is an thrown exception. It was manually thrown by using the PHP 'throw' keyword. The message is intentionally long so as to test the message wrapping in the message box display. in \home\www\libs\PHPUnit_Html\tests\ExceptionTest.php#5</div>
+  <div class="expand-button"></div>
+  <div class="trace closed">  <div class="stacktrace"><table><tr><td class="frameno">0</td><td class="function">??()</td><td class="location"><span title="\home\www\libs\PHPUnit_Html\tests\ExceptionTest.php">\home\www\libs\PHPUnit_Html\tests\ExceptionTest.php</span>:5</td></tr></table></div>
+
+</div>
+</div>
+
+            <div class="source closed">
+      <div class="toggle-button"></div>
+      <div class="listing rounded show"><h1>\home\www\libs\PHPUnit_Html\tests\ExceptionTest.php</h1><table class="code" cellpadding="0" cellspacing="0" border="0"><tr class="line even"><td class="linenum">4</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testException</span><span style="color: #007700">()&nbsp;{</span></td></tr><tr class="line odd"><td class="linenum">5</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;\</span><span style="color: #0000BB">Exception</span><span style="color: #007700">(</span><span style="color: #DD0000">'This&nbsp;is&nbsp;an&nbsp;thrown&nbsp;exception.&nbsp;It&nbsp;was&nbsp;manually&nbsp;thrown&nbsp;by&nbsp;using&nbsp;the&nbsp;PHP&nbsp;\'throw\'&nbsp;keyword.&nbsp;The&nbsp;message&nbsp;is&nbsp;intentionally&nbsp;long&nbsp;so&nbsp;as&nbsp;to&nbsp;test&nbsp;the&nbsp;message&nbsp;wrapping&nbsp;in&nbsp;the&nbsp;message&nbsp;box&nbsp;display.'</span><span style="color: #007700">);</span></td></tr><tr class="line even"><td class="linenum">6</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></td></tr></table></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<hr class="small"><div class="test test-1 even last passed closed">
+  <div class="icon"></div>
+  <div class="name">testTrigger</div>
+  <div class="desc"><span class="assertions">Assertions: <b>0</b>,</span><span class="problems">Problems: <b>1</b>,</span><span class="time">Executed in 0.000555 seconds.</span></div>
+  
+  <div class="expand-button"></div>
+  <div class="more">
+    <div class="result"><pre></pre></div>
+    <div class="error message rounded show closed">
+  <div class="icon"></div>
+  <div class="text">This is an triggered error. It was manually triggered by calling the PHP function 'trigger_error'. The message is intentionally long so as to test the message wrapping in the message box display. in \home\www\libs\PHPUnit_Html\tests\ExceptionTest.php#9</div>
+  <div class="expand-button"></div>
+  <div class="trace closed">  <div class="stacktrace"><table><tr><td class="frameno">0</td><td class="function">trigger_error()</td><td class="location"><span title="\home\www\libs\PHPUnit_Html\tests\ExceptionTest.php">\home\www\libs\PHPUnit_Html\tests\ExceptionTest.php</span>:9</td></tr></table></div>
+
+</div>
+</div>
+
+            <div class="source closed">
+      <div class="toggle-button"></div>
+      <div class="listing rounded show"><h1>\home\www\libs\PHPUnit_Html\tests\ExceptionTest.php</h1><table class="code" cellpadding="0" cellspacing="0" border="0"><tr class="line even"><td class="linenum">8</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testTrigger</span><span style="color: #007700">()&nbsp;{</span></td></tr><tr class="line odd"><td class="linenum">9</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">trigger_error</span><span style="color: #007700">(</span><span style="color: #DD0000">'This&nbsp;is&nbsp;an&nbsp;triggered&nbsp;error.&nbsp;It&nbsp;was&nbsp;manually&nbsp;triggered&nbsp;by&nbsp;calling&nbsp;the&nbsp;PHP&nbsp;function&nbsp;\'trigger_error\'.&nbsp;The&nbsp;message&nbsp;is&nbsp;intentionally&nbsp;long&nbsp;so&nbsp;as&nbsp;to&nbsp;test&nbsp;the&nbsp;message&nbsp;wrapping&nbsp;in&nbsp;the&nbsp;message&nbsp;box&nbsp;display.'</span><span style="color: #007700">);</span></td></tr><tr class="line even"><td class="linenum">10</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></td></tr></table></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="box rounded suite suite-3 even failed open">
+    <div class="icon"></div>
+    <div class="name">FailedTest</div>
+    <div class="desc"><span class="stats"><span class="total">Total: <b>3</b>,</span><span class="passed">Passed: <b>2</b>,</span><span class="failed">Failed: <b>1</b>,</span><span class="skipped">Skipped: <b>0</b>,</span><span class="incomplete">Incomplete: <b>0</b></span></span><span class="assertions">Assertions: <b>1</b>,</span><span class="problems">Problems: <b>2</b>,</span><span class="time">Executed in 0.005117 seconds.</span></div>
+    <div class="expand-button"></div>
+    <div class="more tests">
+      <hr class="big"><div class="test test-0 even failed open">
+  <div class="icon"></div>
+  <div class="name">testFailed</div>
+  <div class="desc"><span class="assertions">Assertions: <b>1</b>,</span><span class="problems">Problems: <b>0</b>,</span><span class="time">Executed in 0.003874 seconds.</span></div>
+  
+  <div class="expand-button"></div>
+  <div class="more">
+    <div class="result"><pre>This is doomed to failure!
+Failed asserting that &lt;integer:2&gt; matches expected &lt;integer:1&gt;.
+\home\www\libs\PHPUnit_Html\tests\FailedTest.php:6
+</pre></div>
+                <div class="output rounded show">
+      <pre>some random debug message</pre>
+    </div>
+        <div class="source closed">
+      <div class="toggle-button"></div>
+      <div class="listing rounded show"><h1>\home\www\libs\PHPUnit_Html\tests\FailedTest.php</h1><table class="code" cellpadding="0" cellspacing="0" border="0"><tr class="line even"><td class="linenum">4</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testFailed</span><span style="color: #007700">()&nbsp;{</span></td></tr><tr class="line odd"><td class="linenum">5</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">print_r</span><span style="color: #007700">(</span><span style="color: #DD0000">'some&nbsp;random&nbsp;debug&nbsp;message'</span><span style="color: #007700">);</span></td></tr><tr class="line even"><td class="linenum">6</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assertEquals</span><span style="color: #007700">(</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'This&nbsp;is&nbsp;doomed&nbsp;to&nbsp;failure!'</span><span style="color: #007700">);</span></td></tr><tr class="line odd"><td class="linenum">7</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></td></tr></table></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<hr class="small"><div class="test test-1 even passed closed">
+  <div class="icon"></div>
+  <div class="name">testWithError</div>
+  <div class="desc"><span class="assertions">Assertions: <b>0</b>,</span><span class="problems">Problems: <b>1</b>,</span><span class="time">Executed in 0.000551 seconds.</span></div>
+  
+  <div class="expand-button"></div>
+  <div class="more">
+    <div class="result"><pre></pre></div>
+    <div class="error message rounded show closed">
+  <div class="icon"></div>
+  <div class="text">Use of undefined constant somestr - assumed 'somestr' in \home\www\libs\PHPUnit_Html\tests\FailedTest.php#10</div>
+  <div class="expand-button"></div>
+  <div class="trace closed">  <div class="stacktrace"><table><tr><td class="frameno">0</td><td class="function">PHPUnit_Util_ErrorHandler::handleError()</td><td class="location"><span title="\home\www\libs\PHPUnit_Html\tests\FailedTest.php">\home\www\libs\PHPUnit_Html\tests\FailedTest.php</span>:10</td></tr></table></div>
+
+</div>
+</div>
+
+            <div class="source closed">
+      <div class="toggle-button"></div>
+      <div class="listing rounded show"><h1>\home\www\libs\PHPUnit_Html\tests\FailedTest.php</h1><table class="code" cellpadding="0" cellspacing="0" border="0"><tr class="line even"><td class="linenum">9</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testWithError</span><span style="color: #007700">()&nbsp;{</span></td></tr><tr class="line odd"><td class="linenum">10</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">somestr</span><span style="color: #007700">;</span></td></tr><tr class="line even"><td class="linenum">11</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assertEquals</span><span style="color: #007700">(</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">);</span></td></tr><tr class="line odd"><td class="linenum">12</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></td></tr></table></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<hr class="small"><div class="test test-2 even last passed closed">
+  <div class="icon"></div>
+  <div class="name">testWithDeepError</div>
+  <div class="desc"><span class="assertions">Assertions: <b>0</b>,</span><span class="problems">Problems: <b>1</b>,</span><span class="time">Executed in 0.000692 seconds.</span></div>
+  
+  <div class="expand-button"></div>
+  <div class="more">
+    <div class="result"><pre></pre></div>
+    <div class="error message rounded show closed">
+  <div class="icon"></div>
+  <div class="text">Undefined variable: some_undefined_variable in \home\www\libs\PHPUnit_Html\tests\FailedTest.php#24</div>
+  <div class="expand-button"></div>
+  <div class="trace closed">  <div class="stacktrace"><table><tr><td class="frameno">0</td><td class="function">PHPUnit_Util_ErrorHandler::handleError()</td><td class="location"><span title="\home\www\libs\PHPUnit_Html\tests\FailedTest.php">\home\www\libs\PHPUnit_Html\tests\FailedTest.php</span>:24</td></tr><tr><td class="frameno">1</td><td class="function">sample_function_containing_error()</td><td class="location"><span title="\home\www\libs\PHPUnit_Html\tests\FailedTest.php">\home\www\libs\PHPUnit_Html\tests\FailedTest.php</span>:23</td></tr><tr><td class="frameno">2</td><td class="function">sample_function3()</td><td class="location"><span title="\home\www\libs\PHPUnit_Html\tests\FailedTest.php">\home\www\libs\PHPUnit_Html\tests\FailedTest.php</span>:22</td></tr><tr><td class="frameno">3</td><td class="function">sample_function2()</td><td class="location"><span title="\home\www\libs\PHPUnit_Html\tests\FailedTest.php">\home\www\libs\PHPUnit_Html\tests\FailedTest.php</span>:21</td></tr><tr><td class="frameno">4</td><td class="function">sample_function1()</td><td class="location"><span title="\home\www\libs\PHPUnit_Html\tests\FailedTest.php">\home\www\libs\PHPUnit_Html\tests\FailedTest.php</span>:20</td></tr><tr><td class="frameno">5</td><td class="function">sample_function()</td><td class="location"><span title="\home\www\libs\PHPUnit_Html\tests\FailedTest.php">\home\www\libs\PHPUnit_Html\tests\FailedTest.php</span>:15</td></tr></table></div>
+
+</div>
+</div>
+
+            <div class="source closed">
+      <div class="toggle-button"></div>
+      <div class="listing rounded show"><h1>\home\www\libs\PHPUnit_Html\tests\FailedTest.php</h1><table class="code" cellpadding="0" cellspacing="0" border="0"><tr class="line even"><td class="linenum">14</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testWithDeepError</span><span style="color: #007700">()&nbsp;{</span></td></tr><tr class="line odd"><td class="linenum">15</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">sample_function</span><span style="color: #007700">();</span></td></tr><tr class="line even"><td class="linenum">16</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assertEquals</span><span style="color: #007700">(</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">);</span></td></tr><tr class="line odd"><td class="linenum">17</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></td></tr></table></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="box rounded suite suite-4 even failed open">
+    <div class="icon"></div>
+    <div class="name">IncompleteTest</div>
+    <div class="desc"><span class="stats"><span class="total">Total: <b>3</b>,</span><span class="passed">Passed: <b>1</b>,</span><span class="failed">Failed: <b>1</b>,</span><span class="skipped">Skipped: <b>0</b>,</span><span class="incomplete">Incomplete: <b>1</b></span></span><span class="assertions">Assertions: <b>2</b>,</span><span class="problems">Problems: <b>0</b>,</span><span class="time">Executed in 0.002630 seconds.</span></div>
+    <div class="expand-button"></div>
+    <div class="more tests">
+      <hr class="big"><div class="test test-0 even incomplete open">
+  <div class="icon"></div>
+  <div class="name">testIncomplete</div>
+  <div class="desc"><span class="assertions">Assertions: <b>1</b>,</span><span class="problems">Problems: <b>0</b>,</span><span class="time">Executed in 0.001772 seconds.</span></div>
+  
+  <div class="expand-button"></div>
+  <div class="more">
+    <div class="result"><pre>This test is marked as incomplete.
+\home\www\libs\PHPUnit_Html\tests\IncompleteTest.php:6
+</pre></div>
+                <div class="source closed">
+      <div class="toggle-button"></div>
+      <div class="listing rounded show"><h1>\home\www\libs\PHPUnit_Html\tests\IncompleteTest.php</h1><table class="code" cellpadding="0" cellspacing="0" border="0"><tr class="line even"><td class="linenum">4</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testIncomplete</span><span style="color: #007700">()&nbsp;{</span></td></tr><tr class="line odd"><td class="linenum">5</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assertTrue</span><span style="color: #007700">(</span><span style="color: #0000BB">TRUE</span><span style="color: #007700">);</span></td></tr><tr class="line even"><td class="linenum">6</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">markTestIncomplete</span><span style="color: #007700">(</span><span style="color: #DD0000">'This&nbsp;test&nbsp;is&nbsp;marked&nbsp;as&nbsp;incomplete.'</span><span style="color: #007700">);</span></td></tr><tr class="line odd"><td class="linenum">7</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></td></tr></table></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<hr class="small"><div class="test test-1 even failed open">
+  <div class="icon"></div>
+  <div class="name">testAssertFailAssertPass</div>
+  <div class="desc"><span class="assertions">Assertions: <b>1</b>,</span><span class="problems">Problems: <b>0</b>,</span><span class="time">Executed in 0.000764 seconds.</span></div>
+  
+  <div class="expand-button"></div>
+  <div class="more">
+    <div class="result"><pre>Failed asserting that &lt;integer:0&gt; matches expected &lt;integer:1&gt;.
+\home\www\libs\PHPUnit_Html\tests\IncompleteTest.php:11
+</pre></div>
+                <div class="output rounded show">
+      <pre>This test has a bad assertion followed by a good assertion</pre>
+    </div>
+        <div class="source closed">
+      <div class="toggle-button"></div>
+      <div class="listing rounded show"><h1>\home\www\libs\PHPUnit_Html\tests\IncompleteTest.php</h1><table class="code" cellpadding="0" cellspacing="0" border="0"><tr class="line even"><td class="linenum">9</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testAssertFailAssertPass</span><span style="color: #007700">()&nbsp;{</span></td></tr><tr class="line odd"><td class="linenum">10</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">print_r</span><span style="color: #007700">(</span><span style="color: #DD0000">'This&nbsp;test&nbsp;has&nbsp;a&nbsp;bad&nbsp;assertion&nbsp;followed&nbsp;by&nbsp;a&nbsp;good&nbsp;assertion'</span><span style="color: #007700">);</span></td></tr><tr class="line even"><td class="linenum">11</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assertEquals</span><span style="color: #007700">(</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">);</span></td></tr><tr class="line odd"><td class="linenum">12</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assertEquals</span><span style="color: #007700">(</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);</span></td></tr><tr class="line even"><td class="linenum">13</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></td></tr></table></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<hr class="small"><div class="test test-2 even last passed closed">
+  <div class="icon"></div>
+  <div class="name">testNoAssertions</div>
+  <div class="desc"><span class="assertions">Assertions: <b>0</b>,</span><span class="problems">Problems: <b>0</b>,</span><span class="time">Executed in 0.000094 seconds.</span></div>
+  
+  <div class="expand-button"></div>
+  <div class="more">
+    <div class="result"><pre></pre></div>
+                <div class="output rounded show">
+      <pre>This test does nothing</pre>
+    </div>
+        <div class="source closed">
+      <div class="toggle-button"></div>
+      <div class="listing rounded show"><h1>\home\www\libs\PHPUnit_Html\tests\IncompleteTest.php</h1><table class="code" cellpadding="0" cellspacing="0" border="0"><tr class="line even"><td class="linenum">15</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testNoAssertions</span><span style="color: #007700">()&nbsp;{</span></td></tr><tr class="line odd"><td class="linenum">16</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">print_r</span><span style="color: #007700">(</span><span style="color: #DD0000">'This&nbsp;test&nbsp;does&nbsp;nothing'</span><span style="color: #007700">);</span></td></tr><tr class="line even"><td class="linenum">17</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></td></tr></table></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="box rounded suite suite-5 even passed closed">
+    <div class="icon"></div>
+    <div class="name">PassedTest</div>
+    <div class="desc"><span class="stats"><span class="total">Total: <b>2</b>,</span><span class="passed">Passed: <b>2</b>,</span><span class="failed">Failed: <b>0</b>,</span><span class="skipped">Skipped: <b>0</b>,</span><span class="incomplete">Incomplete: <b>0</b></span></span><span class="assertions">Assertions: <b>3</b>,</span><span class="problems">Problems: <b>0</b>,</span><span class="time">Executed in 0.000478 seconds.</span></div>
+    <div class="expand-button"></div>
+    <div class="more tests">
+      <hr class="big"><div class="test test-0 even passed closed">
+  <div class="icon"></div>
+  <div class="name">testThisPasses</div>
+  <div class="desc"><span class="assertions">Assertions: <b>2</b>,</span><span class="problems">Problems: <b>0</b>,</span><span class="time">Executed in 0.000184 seconds.</span></div>
+  
+  <div class="expand-button"></div>
+  <div class="more">
+    <div class="result"><pre></pre></div>
+                <div class="output rounded show">
+      <pre>Array
+(
+    [0] =&gt; some
+    [1] =&gt; random
+    [2] =&gt; array
+)
+</pre>
+    </div>
+        <div class="source closed">
+      <div class="toggle-button"></div>
+      <div class="listing rounded show"><h1>\home\www\libs\PHPUnit_Html\tests\PassedTest.php</h1><table class="code" cellpadding="0" cellspacing="0" border="0"><tr class="line even"><td class="linenum">4</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testThisPasses</span><span style="color: #007700">()&nbsp;{</span></td></tr><tr class="line odd"><td class="linenum">5</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">print_r</span><span style="color: #007700">(array(</span><span style="color: #DD0000">'some'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'random'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'array'</span><span style="color: #007700">));</span></td></tr><tr class="line even"><td class="linenum">6</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assertEquals</span><span style="color: #007700">(</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);</span></td></tr><tr class="line odd"><td class="linenum">7</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assertEquals</span><span style="color: #007700">(</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);</span></td></tr><tr class="line even"><td class="linenum">8</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></td></tr></table></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<hr class="small"><div class="test test-1 even last passed closed">
+  <div class="icon"></div>
+  <div class="name">testThisPassesToo</div>
+  <div class="desc"><span class="assertions">Assertions: <b>1</b>,</span><span class="problems">Problems: <b>0</b>,</span><span class="time">Executed in 0.000294 seconds.</span></div>
+  
+  <div class="expand-button"></div>
+  <div class="more">
+    <div class="result"><pre></pre></div>
+                <div class="output rounded show">
+      <pre>&lt;?php
+
+class PassedTest extends PHPUnit_Framework_TestCase {    
+    public function testThisPasses() {
+        print_r(array('some', 'random', 'array'));
+        $this-&gt;assertEquals(1, 1);
+        $this-&gt;assertEquals(1, 1);
+    }
+
+    public function testThisPassesToo() {
+        print_r(file_get_contents(__FILE__));
+        $this-&gt;assertEquals(1, 1);
+    }
+}
+
+?&gt;
+</pre>
+    </div>
+        <div class="source closed">
+      <div class="toggle-button"></div>
+      <div class="listing rounded show"><h1>\home\www\libs\PHPUnit_Html\tests\PassedTest.php</h1><table class="code" cellpadding="0" cellspacing="0" border="0"><tr class="line even"><td class="linenum">10</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testThisPassesToo</span><span style="color: #007700">()&nbsp;{</span></td></tr><tr class="line odd"><td class="linenum">11</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">print_r</span><span style="color: #007700">(</span><span style="color: #0000BB">file_get_contents</span><span style="color: #007700">(</span><span style="color: #0000BB">__FILE__</span><span style="color: #007700">));</span></td></tr><tr class="line even"><td class="linenum">12</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assertEquals</span><span style="color: #007700">(</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);</span></td></tr><tr class="line odd"><td class="linenum">13</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></td></tr></table></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="box rounded suite suite-6 even warning open">
+    <div class="icon"></div>
+    <div class="name">SkippedTest</div>
+    <div class="desc"><span class="stats"><span class="total">Total: <b>2</b>,</span><span class="passed">Passed: <b>0</b>,</span><span class="failed">Failed: <b>0</b>,</span><span class="skipped">Skipped: <b>2</b>,</span><span class="incomplete">Incomplete: <b>0</b></span></span><span class="assertions">Assertions: <b>0</b>,</span><span class="problems">Problems: <b>0</b>,</span><span class="time">Executed in 0.001514 seconds.</span></div>
+    <div class="expand-button"></div>
+    <div class="more tests">
+      <hr class="big"><div class="test test-0 even skipped open">
+  <div class="icon"></div>
+  <div class="name">testPassed</div>
+  <div class="desc"><span class="assertions">Assertions: <b>0</b>,</span><span class="problems">Problems: <b>0</b>,</span><span class="time">Executed in 0.001157 seconds.</span></div>
+  
+  <div class="expand-button"></div>
+  <div class="more">
+    <div class="result"><pre>All tests are marked as skipped.
+\home\www\libs\PHPUnit_Html\tests\SkippedTest.php:5
+</pre></div>
+                <div class="source closed">
+      <div class="toggle-button"></div>
+      <div class="listing rounded show"><h1>\home\www\libs\PHPUnit_Html\tests\SkippedTest.php</h1><table class="code" cellpadding="0" cellspacing="0" border="0"><tr class="line even"><td class="linenum">8</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testPassed</span><span style="color: #007700">()&nbsp;{</span></td></tr><tr class="line odd"><td class="linenum">9</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assertEquals</span><span style="color: #007700">(</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'This&nbsp;test&nbsp;should&nbsp;not&nbsp;fail!'</span><span style="color: #007700">);</span></td></tr><tr class="line even"><td class="linenum">10</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></td></tr></table></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<hr class="small"><div class="test test-1 even last skipped open">
+  <div class="icon"></div>
+  <div class="name">testFailed</div>
+  <div class="desc"><span class="assertions">Assertions: <b>0</b>,</span><span class="problems">Problems: <b>0</b>,</span><span class="time">Executed in 0.000357 seconds.</span></div>
+  
+  <div class="expand-button"></div>
+  <div class="more">
+    <div class="result"><pre>All tests are marked as skipped.
+\home\www\libs\PHPUnit_Html\tests\SkippedTest.php:5
+</pre></div>
+                <div class="source closed">
+      <div class="toggle-button"></div>
+      <div class="listing rounded show"><h1>\home\www\libs\PHPUnit_Html\tests\SkippedTest.php</h1><table class="code" cellpadding="0" cellspacing="0" border="0"><tr class="line even"><td class="linenum">12</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testFailed</span><span style="color: #007700">()&nbsp;{</span></td></tr><tr class="line odd"><td class="linenum">13</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assertEquals</span><span style="color: #007700">(</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'This&nbsp;test&nbsp;is&nbsp;meant&nbsp;to&nbsp;fail!'</span><span style="color: #007700">);</span></td></tr><tr class="line even"><td class="linenum">14</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></td></tr></table></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="box rounded suite suite-7 even last passed closed">
+    <div class="icon"></div>
+    <div class="name">SubTest</div>
+    <div class="desc"><span class="stats"><span class="total">Total: <b>2</b>,</span><span class="passed">Passed: <b>2</b>,</span><span class="failed">Failed: <b>0</b>,</span><span class="skipped">Skipped: <b>0</b>,</span><span class="incomplete">Incomplete: <b>0</b></span></span><span class="assertions">Assertions: <b>2</b>,</span><span class="problems">Problems: <b>2</b>,</span><span class="time">Executed in 0.000937 seconds.</span></div>
+    <div class="expand-button"></div>
+    <div class="more tests">
+      <hr class="big"><div class="test test-0 even passed closed">
+  <div class="icon"></div>
+  <div class="name">testDeprecatedAndError</div>
+  <div class="desc"><span class="assertions">Assertions: <b>1</b>,</span><span class="problems">Problems: <b>2</b>,</span><span class="time">Executed in 0.000791 seconds.</span></div>
+  
+  <div class="expand-button"></div>
+  <div class="more">
+    <div class="result"><pre></pre></div>
+    <div class="error message rounded show closed">
+  <div class="icon"></div>
+  <div class="text">Undefined variable: some_undefined_variable in \home\www\libs\PHPUnit_Html\tests\FailedTest.php#24</div>
+  <div class="expand-button"></div>
+  <div class="trace closed">  <div class="stacktrace"><table><tr><td class="frameno">0</td><td class="function">PHPUnit_Util_ErrorHandler::handleError()</td><td class="location"><span title="\home\www\libs\PHPUnit_Html\tests\FailedTest.php">\home\www\libs\PHPUnit_Html\tests\FailedTest.php</span>:24</td></tr><tr><td class="frameno">1</td><td class="function">sample_function_containing_error()</td><td class="location"><span title="\home\www\libs\PHPUnit_Html\tests\FailedTest.php">\home\www\libs\PHPUnit_Html\tests\FailedTest.php</span>:23</td></tr><tr><td class="frameno">2</td><td class="function">sample_function3()</td><td class="location"><span title="\home\www\libs\PHPUnit_Html\tests\FailedTest.php">\home\www\libs\PHPUnit_Html\tests\FailedTest.php</span>:22</td></tr><tr><td class="frameno">3</td><td class="function">sample_function2()</td><td class="location"><span title="\home\www\libs\PHPUnit_Html\tests\FailedTest.php">\home\www\libs\PHPUnit_Html\tests\FailedTest.php</span>:21</td></tr><tr><td class="frameno">4</td><td class="function">sample_function1()</td><td class="location"><span title="\home\www\libs\PHPUnit_Html\tests\FailedTest.php">\home\www\libs\PHPUnit_Html\tests\FailedTest.php</span>:20</td></tr><tr><td class="frameno">5</td><td class="function">sample_function()</td><td class="location"><span title="\home\www\libs\PHPUnit_Html\tests\tests\SubTest.php">\home\www\libs\PHPUnit_Html\tests\tests\SubTest.php</span>:6</td></tr></table></div>
+
+</div>
+</div>
+
+    <div class="deprecated message rounded show">
+  <div class="icon"></div>
+  <div class="text">\home\www\libs\PHPUnit_Html\tests\tests\SubTest.php:(between 4 and 7) - assertType() will be removed in PHPUnit 3.6 and should no longer be used. assertInternalType() should be used for asserting internal types such as &quot;integer&quot; or &quot;string&quot; whereas assertInstanceOf() should be used for asserting that an object is an instance of a specified class or interface.</div>
+</div>
+
+        <div class="source closed">
+      <div class="toggle-button"></div>
+      <div class="listing rounded show"><h1>\home\www\libs\PHPUnit_Html\tests\tests\SubTest.php</h1><table class="code" cellpadding="0" cellspacing="0" border="0"><tr class="line even"><td class="linenum">4</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testDeprecatedAndError</span><span style="color: #007700">()&nbsp;{</span></td></tr><tr class="line odd"><td class="linenum">5</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assertType</span><span style="color: #007700">(</span><span style="color: #DD0000">'int'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">3</span><span style="color: #007700">);</span></td></tr><tr class="line even"><td class="linenum">6</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">sample_function</span><span style="color: #007700">();</span></td></tr><tr class="line odd"><td class="linenum">7</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></td></tr></table></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<hr class="small"><div class="test test-1 even last passed closed">
+  <div class="icon"></div>
+  <div class="name">test2</div>
+  <div class="desc"><span class="assertions">Assertions: <b>1</b>,</span><span class="problems">Problems: <b>0</b>,</span><span class="time">Executed in 0.000146 seconds.</span></div>
+  
+  <div class="expand-button"></div>
+  <div class="more">
+    <div class="result"><pre></pre></div>
+                <div class="output rounded show">
+      <pre>$fred=Array
+(
+    [0] =&gt; 2
+    [1] =&gt; 4
+    [2] =&gt; 6
+)
+</pre>
+    </div>
+        <div class="source closed">
+      <div class="toggle-button"></div>
+      <div class="listing rounded show"><h1>\home\www\libs\PHPUnit_Html\tests\tests\SubTest.php</h1><table class="code" cellpadding="0" cellspacing="0" border="0"><tr class="line even"><td class="linenum">9</td><td class="linetxt"><span>function&nbsp;</span><span style="color: #0000BB">test2</span><span style="color: #007700">()&nbsp;{</span></td></tr><tr class="line odd"><td class="linenum">10</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fred&nbsp;</span><span style="color: #007700">=&nbsp;array(</span><span style="color: #0000BB">2</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">4</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">6</span><span style="color: #007700">);</span></td></tr><tr class="line even"><td class="linenum">11</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;</span><span style="color: #DD0000">'$fred='</span><span style="color: #007700">;</span></td></tr><tr class="line odd"><td class="linenum">12</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">print_r</span><span style="color: #007700">(</span><span style="color: #0000BB">$fred</span><span style="color: #007700">);</span></td></tr><tr class="line even"><td class="linenum">13</td><td class="linetxt"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assertEquals</span><span style="color: #007700">(</span><span style="color: #0000BB">$fred</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #0000BB">2</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">4</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">6</span><span style="color: #007700">));</span></td></tr><tr class="line odd"><td class="linenum">14</td><td class="linetxt"><span>}</span></td></tr></table></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+      <div id="footer">
+        <div class="w3c-valid-html"><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional"></a></div>
+
+        <div class="w3c-valid-css"><a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!"></a></div>
+        <div class="copyright">&copy; 2011 Nick Turner. Inspired by Matt Mueller.<br>PHPUnit 3.5.14 by Sebastian Bergmann.<br>Time: 0 seconds, Memory: 4.50Mb</div>
+      </div>
+    </div>
+    <script src="../src/templates/default/javascript/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../src/templates/default/javascript/main.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

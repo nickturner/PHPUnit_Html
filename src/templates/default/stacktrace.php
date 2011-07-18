@@ -1,0 +1,2 @@
+  <div class="stacktrace"><table><?PHP foreach (PHPUnit_Util_Filter::getFilteredStackTrace($e, FALSE, FALSE) as $i => $t) { echo '<tr><td class="frameno">'.$i.'</td><td class="function">'.(isset($t['function']) ? htmlentities((isset($t['class']) ? $t['class'].$t['type'] : '').$t['function']) : '??').'()</td><td class="location">'.(isset($t['file']) ? '<span title="'.htmlentities($t['file']).'">'.htmlentities($t['file']).'</span>:'.$t['line'] : '').'</td></tr>'; } ?></table></div>
+

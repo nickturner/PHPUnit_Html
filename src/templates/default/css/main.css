@@ -1,0 +1,384 @@
+html {
+  overflow-y: scroll;
+}
+
+body {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+hr {
+  clear: both;
+  height: 1px;
+}
+
+hr.big {
+  color: #A0A0A0;
+  background-color: #A0A0A0;
+}
+
+hr.small {
+  color: #CCCCCC;
+  background-color: #CCCCCC;
+}
+
+.rounded {
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+
+}
+
+#container {
+  width: 960px;
+  margin: auto;
+}
+
+.box {
+  overflow: auto;
+  margin: 10px 0;
+  background-color:#EEEEEE;
+  border:1px solid #A0A0A0;
+  padding:7px;
+  color: #858585;
+  font-family: "Lucida Grande", Helvetica, Arial, "MS Trebuchet", sans-serif;
+  font-size: 12px;
+  -webkit-box-shadow: 1px 1px 2px #CCC;
+  -moz-box-shadow: 1px 1px 2px #CCC;
+  box-shadow: 0px 0px 7px #999;
+}
+
+.suite {
+  padding: 4px 7px;
+  overflow: auto;
+  vertical-align: middle;
+  clear: both;
+  margin-bottom: 24px;
+}
+
+.suite.last {
+  margin-bottom: 10px;
+}
+
+.test {
+  clear: both;
+}
+
+.icon {
+  float: left;
+  height: 48px;
+  width: 48px;
+  margin: 0 16px 8px 0;
+}
+
+.passed .icon {
+  background: transparent url('../images/48x48/passed.png');
+}
+
+.failed .icon {
+  background: transparent url('../images/48x48/failed.png');
+}
+
+.warning .icon {
+  background: transparent url('../images/48x48/warning.png');
+}
+
+.tests .icon {
+  height: 16px;
+  width: 16px;
+}
+
+.tests .passed .icon {
+  background: transparent url('../images/16x16/passed.png');
+}
+
+.tests .failed .icon {
+  background: transparent url('../images/16x16/failed.png');
+}
+
+.tests .incomplete .icon {
+  background: transparent url('../images/16x16/incomplete.png');
+}
+
+.tests .warning .icon {
+  background: transparent url('../images/16x16/warning.png');
+}
+
+.tests .skipped .icon {
+  background: transparent url('../images/16x16/skipped.png');
+}
+
+.expand-button {
+  float: right;
+  margin: 16px 0px;
+  height: 16px;
+  width: 16px;
+  background: transparent url('../images/16x16/toggle-plus.png');
+}
+
+.open .expand-button {
+  background: transparent url('../images/16x16/toggle-minus.png');
+}
+
+.tests .expand-button {
+  margin: 0px;
+  background: transparent url('../images/16x16/toggle-plus.png');
+}
+
+.tests .open .expand-button {
+  background: transparent url('../images/16x16/toggle-minus.png');
+}
+
+.more {
+  clear: both;
+  display: none;
+}
+
+.open .more {
+  display: block;
+}
+
+.tests .more {
+  margin-left: 32px;
+  display: none;
+}
+
+.tests .open .more {
+  display: block;
+}
+
+
+.name {
+  float: left;
+  line-height: 48px;
+  font-size: 24px;
+  font-weight: bold;
+  width: 328px;
+}
+
+.tests .name {
+  line-height: 16px;
+  font-size: 14px;
+  width: 360px;
+}
+
+.desc {
+  float: left;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.tests .desc {
+}
+
+.desc .stats {
+  line-height: 32px;
+  font-size: 18px;
+  display: block;
+}
+
+.suite .desc span {
+  margin-right: 0.5em;
+}
+
+.message {
+  position: relative;
+  margin: 1em 0;
+  padding: 0.5em;
+  border: 1px solid #888888;
+  background-color: #DDDDDD;
+  overflow: auto;
+}
+
+.message .icon {
+  float: left !important;
+  height: 16px !important;
+  width: 16px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  background: transparent url('../images/16x16/info.png') !important;
+}
+
+.message.error .icon {
+  background: transparent url('../images/16x16/error.png') !important;
+}
+
+.message.warning .icon {
+  background: transparent url('../images/16x16/warning.png') !important;
+}
+
+.message .text {
+  margin: 0 24px 0 24px !important;
+}
+
+.message .expand-button {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  height: 16px;
+  width: 16px;
+  background: transparent url('../images/16x16/message-close.png') !important;
+}
+
+.message.closed .expand-button {
+  background: transparent url('../images/16x16/message-open.png') !important;
+}
+
+.message.closed .trace {
+  display: none;
+}
+
+.message .trace {
+  clear: both;
+  margin: 0 0 0 24px !important;
+}
+
+.message .trace table {
+  border-collapse: collapse;
+  font-size: smaller;
+  width: 100%;
+}
+
+.message .trace table td {
+  border: 1px solid #CCCCCC;
+  padding: 2px;
+}
+
+.message .trace table td.frameno {
+  text-align: right;
+  width: 2em;
+}
+
+.message .trace table td.function {
+}
+
+.message .trace table td.location {
+}
+
+.test .output {
+  margin: 1em 0;
+  padding: 0.5em;
+  border: 1px solid #888888;
+  background-color: #FFFFFF;
+  overflow: auto;
+}
+
+.test .more .source {
+  position: relative;
+  min-height: 32px;
+  margin: 1em 0;
+}
+
+.test .more .source .toggle-button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  height: 16px;
+  width: 16px;
+  background: transparent url('../images/16x16/source-close.png');
+  z-index: 100;
+}
+
+.test .more .source.closed .toggle-button {
+  background: transparent url('../images/16x16/source-open.png');
+}
+
+.test .more .source .listing {
+  position: relative;
+  padding: 0.5em;
+  border: 1px solid #888888;
+  background-color: #FFFFFF;
+  min-height: 32px;
+  overflow: auto;
+}
+
+.test .more .source.closed .listing {
+  display: none;
+}
+
+.test .more .source .listing h1 {
+  font-size: 1em;
+}
+
+.code {
+  font-family: "Consolas","Bitstream Vera Sans Mono","Courier New",Courier,monospace !important;
+  font-size: 1em;
+  line-height: 1.1em;
+} 
+
+.code .line {
+  white-space: nowrap;
+}
+
+.code .line.odd {
+  background-color: #F8F8F8 !important;
+}
+
+.code .linenum { 
+  width: 3em;
+  padding-right: 0.3em;
+  color: #AFAFAF;
+  text-align: right; 
+} 
+
+.code .linetxt{ 
+  border-left: 3px solid #6CE26C !important;
+  color: #000000;
+  padding-left: 0.5em;
+  text-align: left; 
+  white-space: nowrap;
+} 
+
+#footer {
+  color: #858585;
+  font-family: "Lucida Grande", Helvetica, Arial, "MS Trebuchet", sans-serif;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #E05151;
+}
+
+#footer .w3c-valid-html {
+  float: left;
+  width: 88px;
+  margin-right: 16px;
+}
+
+#footer .w3c-valid-css {
+  float: right;
+  width: 88px;
+  margin-left: 16px;
+}
+
+#footer .w3c-valid-html img,
+#footer .w3c-valid-css img {
+  border: 0;
+  width: 88px;
+  height: 31px;
+}
+
+#footer .copyright {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.clear {
+  clear: both;
+}
+
+/* vim: set expandtab tabstop=2 shiftwidth=2: */
